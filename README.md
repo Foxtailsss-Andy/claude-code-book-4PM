@@ -1,4 +1,4 @@
-[简体中文](README.zh-CN.md)
+🇨🇳[简体中文](README.zh-CN.md)
 
 # Claude Code: A Product Manager's White-Box Guide
 
