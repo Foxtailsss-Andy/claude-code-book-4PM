@@ -145,6 +145,15 @@ button {
   font-weight: 700;
 }
 
+.topnav .lang-switch {
+  padding: 6px 10px;
+  border: 1px solid rgba(31, 36, 48, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 1;
+  font-weight: 700;
+}
+
 .sidebar-toggle {
   display: none;
   margin-left: auto;
@@ -326,6 +335,10 @@ button {
 }
 
 .content {
+  min-width: 0;
+}
+
+.manuscript-root {
   min-width: 0;
 }
 
@@ -702,6 +715,71 @@ button {
   text-align: left;
   font-family: var(--sans);
   background: rgba(163, 94, 47, 0.08);
+}
+
+html[lang="en"] {
+  hyphens: auto;
+}
+
+html[lang="en"] .brand strong,
+html[lang="en"] .brand small,
+html[lang="en"] .cover-sub,
+html[lang="en"] .cover-lead,
+html[lang="en"] .hero-bridge,
+html[lang="en"] .question-list li,
+html[lang="en"] .panel li,
+html[lang="en"] .catalog-entry p,
+html[lang="en"] .sidebar-nav a span:last-child,
+html[lang="en"] .chapter-summary,
+html[lang="en"] .chapter-body p,
+html[lang="en"] .chapter-body li,
+html[lang="en"] .chapter-body td,
+html[lang="en"] .chapter-body th,
+html[lang="en"] .chapter-body blockquote,
+html[lang="en"] .reading-paths p {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+html[lang="en"] .hero-book-grid,
+html[lang="en"] .cover-hero-grid {
+  grid-template-columns: minmax(0, 1.32fr) minmax(300px, 0.88fr);
+}
+
+html[lang="en"] .hero-book h1,
+html[lang="en"] .cover-hero h1 {
+  font-size: clamp(2.1rem, 3.6vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+html[lang="en"] .chapter h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.7rem);
+  line-height: 1.18;
+}
+
+html[lang="en"] .chapter-summary {
+  max-width: 48rem;
+}
+
+html[lang="en"] .sidebar-nav a,
+html[lang="en"] .button,
+html[lang="en"] .badge {
+  font-family: var(--sans);
+}
+
+html[lang="en"] .sidebar-nav a {
+  align-items: flex-start;
+}
+
+html[lang="en"] .catalog-grid {
+  grid-template-columns: 1fr;
+}
+
+html[lang="en"] .catalog-entry h3,
+html[lang="en"] .reading-paths h2 {
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .chapter-body blockquote {

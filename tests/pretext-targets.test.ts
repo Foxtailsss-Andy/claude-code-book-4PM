@@ -15,8 +15,8 @@ test('hero title and hero summary selectors are not enhanced by pretext', () => 
   assert.equal(PRETEXT_SELECTOR_LIST.includes('.chapter-head .chapter-summary'), false)
 })
 
-test('catalog and reading-path selectors still use pretext', () => {
+test('only short catalog headings keep pretext', () => {
   assert.equal(PRETEXT_SELECTOR_LIST.includes('.catalog-entry h3'), true)
-  assert.equal(PRETEXT_SELECTOR_LIST.includes('.catalog-entry p'), true)
-  assert.equal(PRETEXT_SELECTOR_LIST.includes('.reading-paths h2'), true)
+  assert.equal(PRETEXT_SELECTOR_LIST.includes('.catalog-entry p'), false)
+  assert.equal(PRETEXT_SELECTOR_LIST.includes('.reading-paths h2'), false)
 })

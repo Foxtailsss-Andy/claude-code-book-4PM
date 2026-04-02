@@ -6,6 +6,7 @@ import {
   type LayoutLinesResult,
   type PreparedTextWithSegments,
 } from '@chenglou/pretext'
+import { initManuscriptPage } from './manuscript-renderer'
 import { PRETEXT_SELECTOR } from './pretext-targets'
 
 type PretextMode = 'poster' | 'chapter' | 'catalog' | 'summary' | 'aside'
@@ -420,12 +421,17 @@ async function initPretext(): Promise<void> {
   window.addEventListener('resize', scheduleRender)
 }
 
-function init(): void {
+async function init(): Promise<void> {
+  try {
+    await initManuscriptPage()
+  } catch (error) {
+    console.error(error)
+  }
   initScrollTracking()
   initSidebarTracking()
   initReveal()
   initSidebarToggle()
-  void initPretext()
+  await initPretext()
 }
 
-init()
+void init()
