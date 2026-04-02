@@ -4,13 +4,15 @@
 
 ## Preface
 
-This book is not a lightweight overview of "what Claude Code can do." It is a **white-box learning book for product managers**. It tries to answer three questions at the same time:
+I did not want to write another short "here is what Claude Code can do" guide. I wanted to write something I personally would have wanted to read as a product person: a **white-box book that explains how the system actually holds together**.
+
+That is what this book is trying to be. It revolves around three questions:
 
 1. Why does Claude Code work as a product?
 2. Why does Claude Code look more mature than a typical CLI agent at runtime?
 3. Which parts of the Claude Code source system are worth studying directly from a PM perspective?
 
-You can read it as a hybrid of product analysis, runtime architecture handbook, and design-pattern notebook for agent systems.
+You can read it as a mix of product analysis, runtime reading notes, and a design-pattern notebook for agent systems.
 
 ## Contents
 

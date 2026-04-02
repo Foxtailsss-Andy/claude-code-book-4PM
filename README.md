@@ -2,17 +2,17 @@
 
 # Claude Code: A Product Manager's White-Box Guide
 
-This repository hosts a full-length online book that explains Claude Code from a product, runtime, and source-code perspective. It is written for product managers, technical leads, and AI product builders who want to study Claude Code as a serious agent system rather than as a feature checklist.
+This repository is home to a book I wrote after spending a lot of time reading through the Claude Code 2.1.88 snapshot and Anthropic's public materials. I wanted something more useful than a feature summary: a way to explain why Claude Code feels coherent as a product, sturdy as a runtime, and unusually worth studying if you build AI products yourself.
 
-The project is based on the Claude Code 2.1.88 source snapshot together with Anthropic's public materials. The goal is not to retell documentation at a surface level, but to extract a transferable model for how a mature coding agent is designed, governed, and adopted.
+So this project became an online book: part product analysis, part runtime reading notebook, and part collection of design lessons for product managers, technical leads, and agent builders.
 
-## What This Book Answers
+## What I Wrote It To Answer
 
 1. Why does Claude Code work as a product?
 2. Why does it feel more mature than a typical CLI agent at runtime?
 3. Which parts of the source system are worth studying directly from a PM perspective?
 
-## Who This Book Is For
+## Who I Think Will Get the Most Out of It
 
 - Product managers who want a structured understanding of Claude Code
 - People building AI, agent, or developer-tool products
@@ -25,6 +25,12 @@ The project is based on the Claude Code 2.1.88 source snapshot together with Ant
 - White-box explanation of QueryEngine, tools, governance, memory, and context continuity
 - A practical reading path from source structure to product lessons
 - A full English edition covering 16 chapters and 4 appendices
+
+## Why I Think It Is Worth Reading
+
+Claude Code is interesting not just because it is good at coding, but because it shows what happens when model capability is packaged into a real working system: one that can act, keep context, stay governable, recover from interruptions, and still feel usable.
+
+That is the layer I cared about while writing this book, and it is the layer I think product people can learn the most from.
 
 ## Read Online
 

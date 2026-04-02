@@ -6,7 +6,7 @@
   <title>Claude Code: A Product Manager's White-Box Guide</title>
   <meta
     name="description"
-    content="A full-length English edition based on the Claude Code 2.1.88 source snapshot and Anthropic's public materials."
+    content="A book I wrote for product managers who want to understand how Claude Code actually works under the hood."
   />
   <link rel="stylesheet" href="assets/style.css?v=20260402-bilingual-1" />
 </head>
@@ -18,7 +18,7 @@
         <span class="brand-mark"></span>
         <span>
           <strong>Claude Code: A Product Manager's White-Box Guide</strong>
-          <small>Full English edition based on the cc2.1.88 source snapshot and Anthropic public materials</small>
+          <small>An English edition of the book I wrote after studying the cc2.1.88 snapshot and Anthropic's public materials</small>
         </span>
       </a>
       <nav class="topnav">
@@ -35,21 +35,22 @@
     <section class="cover-hero reveal" data-reveal>
       <div class="cover-hero-grid">
         <div>
-          <div class="eyebrow">Online Book · Research-Driven · Printable</div>
+          <div class="eyebrow">Online Book · For Product People · Readable by Design</div>
           <h1>Claude Code: A Product Manager's White-Box Guide</h1>
           <p class="cover-sub">
-            A full English edition based on the cc2.1.88 source snapshot and Anthropic public materials
-            (updated through March 31, 2026)
+            I wrote this as a practical English edition for readers who want to study Claude Code from the inside out,
+            based on the cc2.1.88 source snapshot and Anthropic's public materials.
           </p>
           <p class="cover-lead">
-            This is not a shallow overview of "what Claude Code can do." It is a book-length white-box study
-            written for product managers, technical leads, and AI product builders.
+            I did not want to write another surface-level "here are the features" guide. I wanted something product managers,
+            technical leads, and AI builders could actually read to understand why Claude Code feels so solid in practice.
           </p>
           <p class="hero-bridge">
-            You can read it as a hybrid of product analysis, runtime architecture handbook, and design pattern collection.
+            So this book became my way of combining product analysis, runtime reading notes, and a collection of design lessons
+            worth borrowing for agent products.
           </p>
           <div class="cover-actions">
-            <a class="button primary" href="book.html">Read the English Edition</a>
+            <a class="button primary" href="book.html">Start Reading</a>
             <a class="button secondary" href="manuscript.en.md">Download the English Manuscript</a>
             <a class="button ghost" href="index.zh.html">Switch to Chinese</a>
           </div>
@@ -60,11 +61,11 @@
           </div>
         </div>
         <aside class="cover-summary">
-          <h2>What This Book Answers</h2>
+          <h2>Questions That Drove the Book</h2>
           <ol class="question-list">
-            <li>Why does Claude Code work as a product, rather than as a demo?</li>
-            <li>Why does it feel more mature than a typical CLI agent at runtime?</li>
-            <li>Which parts of the system are worth studying directly from a PM perspective?</li>
+            <li>Why does Claude Code hold together as a real product instead of feeling like an impressive demo?</li>
+            <li>Why does it feel more mature than a typical CLI agent once you actually use it?</li>
+            <li>Which parts of the system are most worth learning from as a PM or product builder?</li>
           </ol>
         </aside>
       </div>
@@ -72,7 +73,7 @@
 
     <section class="cover-grid reveal" data-reveal>
       <article class="panel">
-        <h2>Who Should Read It</h2>
+        <h2>Who I Wrote It For</h2>
         <ul>
           <li>Product managers who want a structured understanding of Claude Code</li>
           <li>People building AI, agent, or developer-tool products</li>
@@ -81,7 +82,7 @@
         </ul>
       </article>
       <article class="panel">
-        <h2>How To Read Efficiently</h2>
+        <h2>How I Suggest Reading It</h2>
         <ul>
           <li>Start with product framing: Chapters 1 through 5</li>
           <li>Then study the runtime backbone: Chapters 6 through 12</li>
@@ -90,7 +91,7 @@
         </ul>
       </article>
       <article class="panel">
-        <h2>What You Will Get</h2>
+        <h2>What You Will Walk Away With</h2>
         <ul>
           <li>A clear product and system model for Claude Code</li>
           <li>White-box understanding of QueryEngine, tools, governance, and memory</li>
@@ -102,8 +103,8 @@
 
     <section class="catalog reveal" data-reveal>
       <div class="section-head">
-        <h2>Chapter Guide</h2>
-        <p>Read straight through for the full argument, or jump by product, runtime, governance, and adoption themes.</p>
+        <h2>What Is Inside</h2>
+        <p>You can read it straight through, or jump in by product framing, runtime design, governance, or adoption.</p>
       </div>
       <div class="catalog-grid">
         <a class="catalog-entry reveal" data-reveal href="book.html#chapter-1">
@@ -191,8 +192,8 @@
 
     <section class="cover-visuals reveal" data-reveal>
       <div class="section-head">
-        <h2>Preview of the Visual Frameworks</h2>
-        <p>The diagrams in this book are structural aids, not decoration.</p>
+        <h2>A Quick Look at the Visual Frameworks</h2>
+        <p>I use diagrams throughout the book to make the runtime and product structure easier to hold in your head.</p>
       </div>
       <div class="visual-grid">
         <img src="assets/fig-product-stack.svg" alt="Product stack diagram" />
@@ -203,8 +204,8 @@
 
     <section class="cover-footer-note reveal" data-reveal>
       <p>
-        Product-state claims in the book follow Anthropic's public materials, while implementation analysis is grounded in the
-        cc2.1.88 source snapshot. The two are connected throughout the book, but not conflated.
+        Whenever I talk about current product behavior, I anchor it in Anthropic's public materials. Whenever I talk about implementation,
+        I anchor it in the cc2.1.88 source snapshot. The book is built by connecting those two layers without pretending they are the same thing.
       </p>
     </section>
   </main>
