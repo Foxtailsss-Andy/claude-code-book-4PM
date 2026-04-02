@@ -2266,9 +2266,7 @@ function setLocale(locale) {
 var PRETEXT_SELECTOR_LIST = [
   ".catalog-entry h3",
   ".catalog-entry p",
-  ".reading-paths h2",
-  ".chapter-head h2",
-  ".chapter-head .chapter-summary"
+  ".reading-paths h2"
 ];
 var PRETEXT_SELECTOR = PRETEXT_SELECTOR_LIST.join(", ");
 
